@@ -3,9 +3,8 @@
 /**
  * Performs basic arithmetic operations.
  * Declared as constexpr to allow compile-time evaluation if arguments are constant.
- * Note: Cannot contain std::cout because I/O is not allowed in constexpr functions.
  */
-constexpr int calculate(int num1, int num2, char symbol)
+int calculate(int num1, int num2, char symbol)
 {
     switch (symbol)
     {
